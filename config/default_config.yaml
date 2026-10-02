@@ -1,0 +1,29 @@
+# Multi-Camera Person Tracking & Re-Identification Configuration
+
+detector:
+  model_name: "yolov8m.pt"  # Options: yolov8n.pt, yolov8s.pt, yolov8m.pt, yolov8l.pt, yolov8x.pt, yolo11n.pt, yolo11m.pt, yolo11x.pt
+  conf_threshold: 0.35
+  iou_threshold: 0.45
+  classes: [0]              # Class 0 = Person in COCO dataset
+  device: "cuda"            # "cuda" or "cpu"
+
+tracker:
+  tracker_type: "bytetrack" # Options: "bytetrack", "botsort"
+  track_high_thresh: 0.5
+  track_low_thresh: 0.1
+  new_track_thresh: 0.6
+  track_buffer: 60          # Number of frames to keep lost tracks
+  match_thresh: 0.8
+
+reid:
+  model_name: "osnet_x1_0"  # Options: osnet_x1_0, osnet_x0_75, osnet_ain_x1_0
+  feature_dim: 512
+  distance_metric: "cosine"
+  reid_threshold: 0.25      # Cosine distance threshold for merging person identities across cameras
+  min_frames_for_reid: 5    # Minimum frames of tracklet required for reliable ReID feature extraction
+
+pipeline:
+  interpolate_missing_boxes: true
+  max_interpolation_gap: 15
+  output_format: "avi"
+  fps: 30

@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Model weights (too large for GitHub)
+*.pt
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Output videos
+videos/output/
+
+# Temp
+*.tmp
+*.log
+
+# Gemini
+.gemini/
