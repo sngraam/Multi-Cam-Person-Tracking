@@ -1,18 +1,6 @@
----
-title: Multi-Camera Person Tracking & ReID
-emoji: 🎥
-colorFrom: indigo
-colorTo: blue
-sdk: gradio
-sdk_version: 5.29.0
-app_file: app.py
-pinned: false
-license: apache-2.0
----
-
 # 🚀 Modern High-HOTA Multi-Camera Person Tracking & Re-Identification System
 
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/sngram/Multi-CamTracker)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-red)](https://pytorch.org/)
 [![Ultralytics YOLOv8/v11](https://img.shields.io/badge/Ultralytics-YOLOv8%2Fv11-00FFFF)](https://github.com/ultralytics/ultralytics)
 [![Gradio](https://img.shields.io/badge/Gradio-4.0%2B-orange)](https://gradio.app)
